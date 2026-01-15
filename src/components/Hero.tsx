@@ -3,6 +3,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,12 +20,16 @@ const Hero = () => {
             Streamline your finance operations with Sapio. We provide high-performance AP services managed by seasoned experts, allowing your team to focus on strategic growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button size="lg" className="bg-blue-900 hover:bg-blue-800 text-white px-8 h-14 text-lg">
-              Get a Consultation <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-blue-900 text-blue-900 hover:bg-blue-50 px-8 h-14 text-lg">
-              View Our Services
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-blue-900 hover:bg-blue-800 text-white px-8 h-14 text-lg w-full sm:w-auto">
+                Get a Consultation <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+            <Link to="/case-studies">
+              <Button size="lg" variant="outline" className="border-blue-900 text-blue-900 hover:bg-blue-50 px-8 h-14 text-lg w-full sm:w-auto">
+                View Case Studies
+              </Button>
+            </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex items-center gap-2 text-gray-700">

@@ -10,6 +10,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -35,12 +36,16 @@ const Index = () => {
               Join leading EU and UK companies who have optimized their finance operations with Sapio's expert-led managed services.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 h-14 text-lg font-semibold shadow-xl">
-                Speak to an Expert
-              </Button>
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 h-14 text-lg font-semibold shadow-xl">
-                View Case Studies
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 h-14 text-lg font-semibold shadow-xl w-full sm:w-auto">
+                  Speak to an Expert
+                </Button>
+              </Link>
+              <Link to="/case-studies">
+                <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 h-14 text-lg font-semibold shadow-xl w-full sm:w-auto">
+                  View Case Studies
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
