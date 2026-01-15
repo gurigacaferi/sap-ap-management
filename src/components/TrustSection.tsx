@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { ShieldCheck, Globe, Scale, Clock } from "lucide-react";
+import { ShieldCheck, Globe, Scale, Clock, TrendingUp, DollarSign } from "lucide-react";
 
 const trustFactors = [
   {
@@ -52,22 +52,40 @@ const TrustSection = () => {
               ))}
             </div>
           </div>
-          <div className="relative">
-            <div className="aspect-square bg-blue-900 rounded-2xl overflow-hidden shadow-2xl relative">
-               <div className="absolute inset-0 bg-gradient-to-tr from-blue-900 to-blue-700 opacity-90 flex items-center justify-center p-12 text-center">
-                  <div>
-                    <div className="text-6xl font-bold text-white mb-4">99.9%</div>
-                    <div className="text-blue-100 text-xl font-medium">Processing Accuracy</div>
-                    <div className="mt-8 pt-8 border-t border-blue-800">
-                       <div className="text-4xl font-bold text-white mb-2">40%</div>
-                       <div className="text-blue-100 text-xl font-medium">Average Cost Reduction</div>
-                    </div>
-                  </div>
-               </div>
+          
+          {/* Redesigned Visual Statistics Block */}
+          <div className="relative space-y-6">
+            {/* Image Placeholder */}
+            <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=1000" 
+                alt="Financial data visualization" 
+                className="w-full h-full object-cover opacity-80"
+              />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-gray-100 hidden sm:block">
-              <div className="text-blue-950 font-bold mb-1">Expert-Managed</div>
-              <div className="text-gray-500 text-sm">Every invoice verified by a pro.</div>
+
+            {/* Metric Cards */}
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-blue-900 p-6 rounded-2xl shadow-xl text-white flex flex-col items-start">
+                <div className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mb-3">
+                  <TrendingUp className="w-5 h-5 text-white" />
+                </div>
+                <div className="text-4xl font-bold mb-1">99.9%</div>
+                <div className="text-blue-200 text-sm font-medium">Processing Accuracy</div>
+              </div>
+              
+              <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex flex-col items-start">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mb-3">
+                  <DollarSign className="w-5 h-5 text-green-600" />
+                </div>
+                <div className="text-4xl font-bold text-blue-950 mb-1">40%</div>
+                <div className="text-gray-500 text-sm font-medium">Average Cost Reduction</div>
+              </div>
+            </div>
+            
+            {/* Small Trust Badge */}
+            <div className="absolute -top-4 right-4 bg-white p-3 rounded-lg shadow-md border border-gray-100 hidden sm:block">
+              <div className="text-blue-950 font-bold text-sm">Audit-Ready</div>
             </div>
           </div>
         </div>
