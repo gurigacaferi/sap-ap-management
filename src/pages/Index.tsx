@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import TrustSection from "@/components/TrustSection";
+import ProcessSection from "@/components/ProcessSection";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Button } from "@/components/ui/button";
@@ -21,6 +23,10 @@ const Index = () => {
         
         <TrustSection />
         
+        <ProcessSection />
+        
+        <FAQ />
+        
         {/* Call to Action Section */}
         <section className="py-24 bg-blue-900 text-white">
           <div className="container mx-auto px-6 text-center">
@@ -29,11 +35,11 @@ const Index = () => {
               Join leading EU and UK companies who have optimized their finance operations with Sapio's expert-led managed services.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 h-14 text-lg font-semibold">
+              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 h-14 text-lg font-semibold shadow-xl">
                 Speak to an Expert
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-10 h-14 text-lg">
-                Explore Our Process
+              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-10 h-14 text-lg">
+                View Case Studies
               </Button>
             </div>
           </div>
