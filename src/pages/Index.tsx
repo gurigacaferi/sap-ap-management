@@ -38,7 +38,7 @@ const Index = () => {
               <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 h-14 text-lg font-semibold shadow-xl">
                 Speak to an Expert
               </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-10 h-14 text-lg">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-10 h-14 text-lg">
                 View Case Studies
               </Button>
             </div>
