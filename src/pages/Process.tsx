@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import ProcessSection from "@/components/ProcessSection";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 const Process = () => {
   return (
@@ -68,6 +69,7 @@ const Process = () => {
         <CTASection />
       </main>
       <Footer />
+      <ScrollIndicator />
     </div>
   );
 };
