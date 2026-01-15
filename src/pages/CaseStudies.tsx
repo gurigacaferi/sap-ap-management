@@ -3,10 +3,10 @@
 import React from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, BarChart, Building2, Globe } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const caseStudies = [
   {
@@ -39,7 +39,7 @@ const CaseStudies = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="pt-32 pb-24">
+      <main className="pt-32 pb-0">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold text-blue-950 mb-6">Case Studies</h1>
@@ -75,16 +75,8 @@ const CaseStudies = () => {
               </Card>
             ))}
           </div>
-
-          <section className="bg-gray-50 rounded-3xl p-12 text-center">
-            <h2 className="text-3xl font-bold text-blue-950 mb-6">Ready to be our next success story?</h2>
-            <Link to="/contact">
-              <Button size="lg" className="bg-blue-900 hover:bg-blue-800 text-white px-8">
-                Book a Free Discovery Call
-              </Button>
-            </Link>
-          </section>
         </div>
+        <CTASection />
       </main>
       <Footer />
     </div>

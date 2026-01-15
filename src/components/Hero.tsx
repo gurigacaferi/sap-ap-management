@@ -26,7 +26,7 @@ const Hero = () => {
               </Button>
             </Link>
             <Link to="/case-studies">
-              <Button size="lg" variant="outline" className="border-blue-900 text-blue-900 hover:bg-blue-50 px-8 h-14 text-lg w-full sm:w-auto">
+              <Button size="lg" className="bg-blue-700 hover:bg-blue-800 text-white px-8 h-14 text-lg w-full sm:w-auto">
                 View Case Studies
               </Button>
             </Link>
