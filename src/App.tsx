@@ -8,6 +8,7 @@ import CaseStudies from "./pages/CaseStudies";
 import Contact from "./pages/Contact";
 import Process from "./pages/Process";
 import NotFound from "./pages/NotFound";
+import ScrollIndicator from "./components/ScrollIndicator";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <ScrollIndicator />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
