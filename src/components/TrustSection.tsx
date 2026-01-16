@@ -33,10 +33,10 @@ const TrustSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold text-blue-950 mb-6 leading-tight">
-              Why Global Enterprises Choose Sapio as Their AP Partner
+              Why Global Enterprises Choose APnova as Their AP Partner
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              In an era of increasing financial complexity, Sapio provides the stability and expertise required to run a world-class Accounts Payable function. Our nearshore delivery model combines cost-efficiency with high-caliber talent.
+              In an era of increasing financial complexity, APnova provides the stability and expertise required to run a world-class Accounts Payable function. Our nearshore delivery model combines cost-efficiency with high-caliber talent.
             </p>
             <div className="space-y-6">
               {trustFactors.map((factor, index) => (

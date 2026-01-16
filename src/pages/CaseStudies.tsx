@@ -44,7 +44,7 @@ const CaseStudies = () => {
           <div className="max-w-3xl mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold text-blue-950 mb-6">Case Studies</h1>
             <p className="text-xl text-gray-600">
-              Discover how Sapio helps leading organizations optimize their finance operations and drive measurable business impact.
+              Discover how APnova helps leading organizations optimize their finance operations and drive measurable business impact.
             </p>
           </div>
 

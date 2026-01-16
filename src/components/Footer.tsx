@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <ShieldCheck className="w-8 h-8 text-blue-400" />
-              <span className="text-2xl font-bold tracking-tight">SAPIO</span>
+              <span className="text-2xl font-bold tracking-tight uppercase">APnova</span>
             </div>
             <p className="text-blue-100/70 mb-6 leading-relaxed">
               Empowering finance leaders with expert-managed Accounts Payable solutions. Built for the EU and UK markets.
@@ -32,7 +32,7 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-6">Company</h4>
             <ul className="space-y-4 text-blue-100/70">
               <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Why Sapio</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Why APnova</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Our Process</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
@@ -43,7 +43,7 @@ const Footer = () => {
             <ul className="space-y-4 text-blue-100/70">
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <span>contact@sapio.com</span>
+                <span>contact@apnova.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400" />
@@ -59,7 +59,7 @@ const Footer = () => {
         
         <div className="pt-12 border-t border-blue-900 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-blue-100/50 text-sm">
-            © {new Date().getFullYear()} Sapio Managed Services. All rights reserved.
+            © {new Date().getFullYear()} APnova Managed Services. All rights reserved.
           </div>
           <div className="flex gap-8 text-sm text-blue-100/50">
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

@@ -18,7 +18,7 @@ const Hero = () => {
               Expert-Led Accounts Payable for EU & UK Enterprises
             </h1>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
-              Streamline your finance operations with Sapio. We provide high-performance AP services managed by seasoned experts, allowing your team to focus on strategic growth.
+              Streamline your finance operations with APnova. We provide high-performance AP services managed by seasoned experts, allowing your team to focus on strategic growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link to="/contact">

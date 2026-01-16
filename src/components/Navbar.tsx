@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <ShieldCheck className="w-8 h-8 text-blue-900" />
-          <span className="text-2xl font-bold tracking-tight text-blue-900">SAPIO</span>
+          <span className="text-2xl font-bold tracking-tight text-blue-900 uppercase">APnova</span>
         </Link>
         
         <div className="hidden md:flex items-center gap-8">
