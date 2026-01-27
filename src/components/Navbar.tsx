@@ -4,6 +4,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
+import MobileNav from './MobileNav';
 
 const Navbar = () => {
   return (
@@ -14,6 +15,7 @@ const Navbar = () => {
           <span className="text-2xl font-bold tracking-tight text-blue-900 uppercase">AP EVO</span>
         </Link>
         
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <Link to="/" className="text-sm font-medium text-gray-600 hover:text-blue-900 transition-colors">Home</Link>
           <Link to="/case-studies" className="text-sm font-medium text-gray-600 hover:text-blue-900 transition-colors">Case Studies</Link>
@@ -24,6 +26,9 @@ const Navbar = () => {
             </Button>
           </Link>
         </div>
+
+        {/* Mobile Navigation */}
+        <MobileNav />
       </div>
     </nav>
   );
