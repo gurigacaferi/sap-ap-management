@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { FileText, CreditCard, Users, BarChart3, ShieldAlert, Zap } from "lucide-material";
+import { FileText, CreditCard, Users, BarChart3, ShieldAlert, Zap } from "lucide-react";
 
 const services = [
   {
