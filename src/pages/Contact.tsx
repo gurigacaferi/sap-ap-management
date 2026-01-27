@@ -31,7 +31,7 @@ const Contact = () => {
               <div className="space-y-8 mb-12">
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-blue-600" />
+                    <Mail className="w-6 h-6 text-[#39B54A]" />
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-950 mb-1">Email Us</h3>
@@ -40,7 +40,7 @@ const Contact = () => {
                 </div>
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-blue-600" />
+                    <Phone className="w-6 h-6 text-[#39B54A]" />
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-950 mb-1">Call Us</h3>
@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-blue-600" />
+                    <MapPin className="w-6 h-6 text-[#39B54A]" />
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-950 mb-1">Our Hub</h3>
@@ -62,15 +62,15 @@ const Contact = () => {
                 <h3 className="font-bold text-blue-950 mb-4">What happens next?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 text-gray-700">
-                    <CheckCircle2 className="w-5 h-5 text-blue-600" />
+                    <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
                     <span>Response within 24 business hours</span>
                   </li>
                   <li className="flex items-center gap-3 text-gray-700">
-                    <CheckCircle2 className="w-5 h-5 text-blue-600" />
+                    <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
                     <span>Discovery call with a senior expert</span>
                   </li>
                   <li className="flex items-center gap-3 text-gray-700">
-                    <CheckCircle2 className="w-5 h-5 text-blue-600" />
+                    <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
                     <span>Free process optimization analysis</span>
                   </li>
                 </ul>
@@ -102,7 +102,7 @@ const Contact = () => {
                   <Label htmlFor="message">How can we help?</Label>
                   <Textarea id="message" placeholder="Tell us about your AP challenges..." className="min-h-[120px]" />
                 </div>
-                <Button type="submit" className="w-full bg-blue-900 hover:bg-blue-800 text-white h-14 text-lg">
+                <Button type="submit" className="w-full bg-[#39B54A] hover:bg-[#2E933C] text-white h-14 text-lg">
                   Send Message
                 </Button>
                 <p className="text-center text-xs text-gray-500 mt-4">

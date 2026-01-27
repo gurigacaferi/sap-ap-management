@@ -49,15 +49,15 @@ const Process = () => {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#39B54A]" />
                     <span>AI-Powered Extraction</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#39B54A]" />
                     <span>Expert Manual Review</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#39B54A]" />
                     <span>Senior Finance Validation</span>
                   </li>
                 </ul>

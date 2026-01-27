@@ -63,7 +63,7 @@ const CaseStudies = () => {
                     {study.description}
                   </p>
                   <div className="p-4 bg-blue-900 rounded-lg text-white">
-                    <div className="text-3xl font-bold mb-1">{study.stat}</div>
+                    <div className="text-3xl font-bold mb-1 text-[#39B54A]">{study.stat}</div>
                     <div className="text-sm text-blue-100 opacity-80">{study.results}</div>
                   </div>
                 </CardContent>
