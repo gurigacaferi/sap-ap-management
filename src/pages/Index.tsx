@@ -9,7 +9,6 @@ import ProcessSection from "@/components/ProcessSection";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
-import { MadeWithDyad } from "@/components/made-with-dyad";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
 const Index = () => {
@@ -32,7 +31,6 @@ const Index = () => {
       </main>
       
       <Footer />
-      <MadeWithDyad />
       <ScrollIndicator />
     </div>
   );
