@@ -102,7 +102,7 @@ const Contact = () => {
                   <Label htmlFor="message">How can we help?</Label>
                   <Textarea id="message" placeholder="Tell us about your AP challenges..." className="min-h-[120px]" />
                 </div>
-                <Button type="submit" className="w-full bg-[#39B54A] hover:bg-[#2E933C] text-white h-14 text-lg">
+                <Button type="submit" className="w-full bg-blue-900 hover:bg-blue-800 text-white h-14 text-lg">
                   Send Message
                 </Button>
                 <p className="text-center text-xs text-gray-500 mt-4">
