@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import MobileNav from './MobileNav';
 import { cn } from '@/lib/utils';
@@ -29,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <ShieldCheck className="w-8 h-8 text-[#39B54A] transition-transform group-hover:scale-110" />
+          <img src="/logo.png" alt="AP EVO Logo" className="w-8 h-8 transition-transform group-hover:scale-110" />
           <span className="text-2xl font-bold tracking-tight text-white uppercase">AP EVO</span>
         </Link>
         
