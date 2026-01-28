@@ -17,7 +17,7 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">Our Services</Link>
+          <Link to="/about" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">About Us</Link>
           <Link to="/case-studies" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">Case Studies</Link>
           <Link to="/process" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">Our Process</Link>
           <Link to="/contact">

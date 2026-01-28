@@ -7,8 +7,8 @@ import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
 import Contact from "./pages/Contact";
 import Process from "./pages/Process";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-// ScrollIndicator is now imported and rendered within specific pages
 
 const queryClient = new QueryClient();
 
@@ -23,7 +23,7 @@ const App = () => (
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/process" element={<Process />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

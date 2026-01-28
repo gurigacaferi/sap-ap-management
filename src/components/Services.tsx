@@ -6,33 +6,33 @@ import { FileText, CreditCard, Users, BarChart3, ShieldAlert, Zap } from "lucide
 
 const services = [
   {
-    title: "Invoice Processing",
-    description: "Multi-channel invoice capture and validation managed by our dedicated experts to ensure 100% accuracy.",
+    title: "99.9% Accurate Invoice Capture",
+    description: "Multi-regional invoice processing managed by senior experts. We eliminate data entry errors and ensure 100% tax compliance across the UK and EU.",
     icon: FileText
   },
   {
-    title: "Payment Execution",
-    description: "Secure, timely payment runs and bank reconciliations compliant with EU/UK banking standards.",
+    title: "Secure Multi-Currency Payments",
+    description: "Eliminate payment risk with strictly controlled, audit-ready payment runs executed within your existing banking and ERP environments.",
     icon: CreditCard
   },
   {
-    title: "Vendor Management",
-    description: "Comprehensive management of vendor relationships, inquiries, and statement reconciliations.",
+    title: "Proactive Vendor Relations",
+    description: "Protect your supply chain. We handle all vendor inquiries, statement reconciliations, and disputes, keeping your reputation spotless.",
     icon: Users
   },
   {
-    title: "Exception Handling",
-    description: "Proactive resolution of discrepancies and approval workflows to prevent payment delays.",
+    title: "Rapid Exception Resolution",
+    description: "Stop payment delays before they happen. Our team proactively identifies and resolves discrepancies, maintaining 100% workflow continuity.",
     icon: ShieldAlert
   },
   {
-    title: "Reporting & Insights",
-    description: "Real-time visibility into your AP cycle with detailed accrual reporting and cash flow analysis.",
+    title: "Real-Time Financial Visibility",
+    description: "Gain total control over your cash flow with daily accrual reporting and granular spend analytics delivered directly to your leadership team.",
     icon: BarChart3
   },
   {
-    title: "Process Optimization",
-    description: "Continuous improvement of your end-to-end AP workflow to drive operational excellence.",
+    title: "Continuous Process ROI",
+    description: "We don't just process; we optimize. Our team identifies efficiency gaps in your workflow to drive year-on-year operational cost savings.",
     icon: Zap
   }
 ];
@@ -42,8 +42,8 @@ const Services = () => {
     <section id="services" className="py-24 bg-[#F8F9FA]">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">Comprehensive Managed AP Services</h2>
-          <p className="text-gray-600 text-lg">We handle the complexity of Accounts Payable so you don't have to. Our expert-led approach guarantees quality and reliability.</p>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">Outcome-Driven AP Management</h2>
+          <p className="text-gray-600 text-lg">We don't just provide labor; we provide results. Our managed services are designed to improve your bottom line and financial accuracy.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
