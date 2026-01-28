@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import MobileNav from './MobileNav';
 import { cn } from '@/lib/utils';
-import { FileText } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,12 +27,8 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          {/* Replaced broken image with a Lucide icon placeholder */}
-          <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110">
-            <FileText className="w-6 h-6 text-[#39B54A]" />
-          </div>
-          <span className="text-2xl font-bold tracking-tight text-white uppercase">AP EVO</span>
+        <Link to="/" className="flex items-center group">
+          <img src="/logo.png" alt="AP EVO Logo" className="h-8 w-auto" />
         </Link>
         
         {/* Desktop Navigation */}

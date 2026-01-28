@@ -10,9 +10,8 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-8 group">
-              <img src="/logo.png" alt="AP EVO Logo" className="w-8 h-8" />
-              <span className="text-2xl font-bold tracking-tight uppercase">AP EVO</span>
+            <Link to="/" className="flex items-center mb-8 group">
+              <img src="/logo.png" alt="AP EVO Logo" className="h-8 w-auto" />
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm">
               Empowering finance leaders with expert-managed Accounts Payable solutions. Built for the EU and UK markets.
