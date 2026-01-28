@@ -3,8 +3,10 @@
 import React from 'react';
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import LogoWall from "@/components/LogoWall";
 import Services from "@/components/Services";
 import TrustSection from "@/components/TrustSection";
+import Testimonials from "@/components/Testimonials";
 import ProcessSection from "@/components/ProcessSection";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -19,9 +21,13 @@ const Index = () => {
       <main>
         <Hero />
         
+        <LogoWall />
+        
         <Services />
         
         <TrustSection />
+        
+        <Testimonials />
         
         <ProcessSection />
         
