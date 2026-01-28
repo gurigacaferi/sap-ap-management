@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'lucide-react';
+import { Menu, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
@@ -30,13 +30,13 @@ const MobileNav: React.FC = () => {
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild className="md:hidden">
         <Button variant="ghost" size="icon" aria-label="Toggle Menu">
-          <Menu className="h-6 w-6 text-blue-900" />
+          <Menu className="h-6 w-6 text-white" />
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
         <SheetHeader className="p-6 border-b">
           <SheetTitle className="flex items-center gap-2">
-            <img src="/logo.png" alt="AP EVO Logo" className="w-6 h-6" />
+            <FileText className="w-6 h-6 text-[#39B54A]" />
             <span className="text-xl font-bold tracking-tight text-blue-900 uppercase">AP EVO</span>
           </SheetTitle>
         </SheetHeader>
