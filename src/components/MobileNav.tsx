@@ -36,7 +36,7 @@ const MobileNav: React.FC = () => {
       <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
         <SheetHeader className="p-6 border-b">
           <SheetTitle className="flex items-center">
-            <img src="/logo.png" alt="AP EVO Logo" className="h-8 w-auto" />
+            <img src="/logo.png" alt="AP EVO Logo" className="h-10 w-auto" />
           </SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col p-6 space-y-4">

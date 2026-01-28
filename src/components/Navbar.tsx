@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center group">
-          <img src="/logo.png" alt="AP EVO Logo" className="h-8 w-auto" />
+          <img src="/logo.png" alt="AP EVO Logo" className="h-10 w-auto" />
         </Link>
         
         {/* Desktop Navigation */}
