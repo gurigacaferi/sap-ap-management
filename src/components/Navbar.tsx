@@ -1,27 +1,45 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import MobileNav from './MobileNav';
+import { cn } from '@/lib/utils';
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#0B1B35] border-b border-white/10">
-      <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <ShieldCheck className="w-8 h-8 text-white" />
+    <nav 
+      className={cn(
+        "fixed top-0 w-full z-50 transition-all duration-300 border-b",
+        isScrolled 
+          ? "bg-[#0B1B35]/95 backdrop-blur-md py-3 shadow-lg border-white/10" 
+          : "bg-[#0B1B35] py-5 border-transparent"
+      )}
+    >
+      <div className="container mx-auto px-6 flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-2 group">
+          <ShieldCheck className="w-8 h-8 text-[#39B54A] transition-transform group-hover:scale-110" />
           <span className="text-2xl font-bold tracking-tight text-white uppercase">AP EVO</span>
         </Link>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/about" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">About Us</Link>
-          <Link to="/case-studies" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">Case Studies</Link>
-          <Link to="/process" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">Our Process</Link>
+          <Link to="/about" className="text-sm font-semibold text-gray-300 hover:text-white transition-colors">About Us</Link>
+          <Link to="/case-studies" className="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Case Studies</Link>
+          <Link to="/process" className="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Our Process</Link>
           <Link to="/contact">
-            <Button variant="default" className="bg-[#39B54A] hover:bg-[#2E933C] text-white px-6 font-bold uppercase text-xs tracking-wider">
+            <Button variant="default" className="bg-[#39B54A] hover:bg-[#2E933C] text-white px-6 font-bold uppercase text-xs tracking-wider shadow-lg shadow-[#39B54A]/20">
               Talk to Sales
             </Button>
           </Link>

@@ -39,7 +39,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-[#F8F9FA]">
+    <section id="services" className="py-24 bg-[#F8F9FA] scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">Outcome-Driven AP Management</h2>

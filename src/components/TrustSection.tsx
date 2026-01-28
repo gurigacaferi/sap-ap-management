@@ -34,7 +34,7 @@ const badges = [
 
 const TrustSection = () => {
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-white scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">
@@ -89,8 +89,9 @@ const TrustSection = () => {
           <div className="hidden md:block">
             <img 
               src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=1000" 
-              alt="Financial data" 
+              alt="Financial analysis on tablet" 
               className="rounded-2xl shadow-2xl opacity-80"
+              loading="lazy"
             />
           </div>
         </div>

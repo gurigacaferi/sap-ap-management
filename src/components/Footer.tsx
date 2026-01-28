@@ -10,10 +10,10 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
-            <div className="flex items-center gap-2 mb-8">
+            <Link to="/" className="flex items-center gap-2 mb-8 group">
               <ShieldCheck className="w-8 h-8 text-[#39B54A]" />
               <span className="text-2xl font-bold tracking-tight uppercase">AP EVO</span>
-            </div>
+            </Link>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm">
               Empowering finance leaders with expert-managed Accounts Payable solutions. Built for the EU and UK markets.
             </p>
@@ -22,20 +22,20 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Services</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><Link to="/#services" className="hover:text-white transition-colors">Invoice Processing</Link></li>
-              <li><Link to="/#services" className="hover:text-white transition-colors">Payment Execution</Link></li>
-              <li><Link to="/#services" className="hover:text-white transition-colors">Vendor Management</Link></li>
-              <li><Link to="/#services" className="hover:text-white transition-colors">Exception Handling</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Invoice Processing</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Payment Execution</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Vendor Management</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Exception Handling</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Company</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><Link to="/#about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/#about" className="hover:text-white transition-colors">Why AP EVO</Link></li>
-              <li><Link to="/process" className="hover:text-white transition-colors">Our Process</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><Link to="/about" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">About Us</Link></li>
+              <li><Link to="/#about" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Why AP EVO</Link></li>
+              <li><Link to="/process" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Our Process</Link></li>
+              <li><a href="#" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Privacy Policy</a></li>
             </ul>
           </div>
           
@@ -43,15 +43,15 @@ const Footer = () => {
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Contact</h4>
             <ul className="space-y-6 text-gray-400 text-sm">
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[#39B54A]" />
+                <Mail className="w-5 h-5 text-[#39B54A]" aria-hidden="true" />
                 <span>contact@apevo.com</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[#39B54A]" />
+                <Phone className="w-5 h-5 text-[#39B54A]" aria-hidden="true" />
                 <span>+383 (0) 44 000 000</span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#39B54A]" />
+                <MapPin className="w-5 h-5 text-[#39B54A]" aria-hidden="true" />
                 <span>Pristina, Nearshore Hub</span>
               </li>
             </ul>
