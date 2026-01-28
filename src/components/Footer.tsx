@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  </li>
-);
+  );
+};
 
 export default Footer;
