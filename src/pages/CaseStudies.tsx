@@ -7,6 +7,7 @@ import CTASection from "@/components/CTASection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, BarChart, Building2, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const caseStudies = [
   {
@@ -68,9 +69,11 @@ const CaseStudies = () => {
                   </div>
                 </CardContent>
                 <div className="p-6 pt-0 mt-auto">
-                  <Button variant="ghost" className="p-0 text-blue-900 hover:text-blue-700 hover:bg-transparent font-semibold">
-                    Read Full Story <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  <Link to="#" className="inline-flex items-center">
+                    <Button variant="ghost" className="p-0 text-blue-900 hover:text-blue-700 hover:bg-transparent font-semibold">
+                      Read Full Story <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </Link>
                 </div>
               </Card>
             ))}

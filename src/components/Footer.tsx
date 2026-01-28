@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ShieldCheck, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,19 +22,19 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Services</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Invoice Processing</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Payment Execution</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Vendor Management</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Exception Handling</a></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Invoice Processing</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Payment Execution</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Vendor Management</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Exception Handling</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Company</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Why AP EVO</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Our Process</a></li>
+              <li><Link to="/#about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/#about" className="hover:text-white transition-colors">Why AP EVO</Link></li>
+              <li><Link to="/process" className="hover:text-white transition-colors">Our Process</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
