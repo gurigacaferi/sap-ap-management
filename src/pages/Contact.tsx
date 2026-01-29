@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="pt-32 pb-24">
+      <main className="pt-44 pb-24">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>

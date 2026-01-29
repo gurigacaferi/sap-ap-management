@@ -40,7 +40,7 @@ const CaseStudies = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="pt-32 pb-0">
+      <main className="pt-44 pb-0">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold text-blue-950 mb-6">Case Studies</h1>

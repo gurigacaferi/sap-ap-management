@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="pt-32">
+      <main className="pt-44">
         <div className="container mx-auto px-6 mb-20">
           <div className="max-w-4xl">
             <h1 className="text-4xl lg:text-6xl font-extrabold text-[#0B1B35] mb-8">

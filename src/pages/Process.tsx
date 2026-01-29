@@ -11,7 +11,7 @@ const Process = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="pt-32">
+      <main className="pt-44">
         <div className="container mx-auto px-6 mb-16">
           <div className="max-w-3xl">
             <h1 className="text-4xl lg:text-5xl font-bold text-blue-950 mb-6">Our Methodology</h1>
