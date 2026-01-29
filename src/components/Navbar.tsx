@@ -17,6 +17,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Use h-28 when not scrolled, and h-12 when scrolled for better usability
+  const logoSizeClass = isScrolled ? "h-12" : "h-28";
+
   return (
     <nav 
       className={cn(
@@ -26,10 +29,13 @@ const Navbar = () => {
           : "bg-[#0B1B35] py-5 border-transparent"
       )}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between h-16">
+      <div className="container mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center group">
-          {/* Reduced logo size for better fit in a fixed header */}
-          <img src="/logo.png" alt="AP EVO Logo" className="h-10 w-auto transition-all duration-300" />
+          <img 
+            src="/logo.png" 
+            alt="AP EVO Logo" 
+            className={cn(logoSizeClass, "w-auto transition-all duration-300")} 
+          />
         </Link>
         
         {/* Desktop Navigation */}
