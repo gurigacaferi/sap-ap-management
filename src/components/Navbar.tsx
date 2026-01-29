@@ -26,9 +26,10 @@ const Navbar = () => {
           : "bg-[#0B1B35] py-5 border-transparent"
       )}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-6 flex items-center justify-between h-16">
         <Link to="/" className="flex items-center group">
-          <img src="/logo.png" alt="AP EVO Logo" className="h-28 w-auto" />
+          {/* Reduced logo size for better fit in a fixed header */}
+          <img src="/logo.png" alt="AP EVO Logo" className="h-10 w-auto transition-all duration-300" />
         </Link>
         
         {/* Desktop Navigation */}

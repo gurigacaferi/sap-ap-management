@@ -18,7 +18,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      <main>
+      <main className="pt-0"> {/* Hero already handles padding, so pt-0 here is fine, but let's ensure Hero is the first element */}
         <Hero />
         
         <LogoWall />
