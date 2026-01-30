@@ -2,38 +2,38 @@
 
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { FileText, CreditCard, Users, BarChart3, ShieldAlert, Zap } from "lucide-react";
+import { BookOpen, Receipt, Building2, Calculator, Users, BarChart3, ShieldCheck, TrendingDown } from "lucide-react";
 
 const services = [
   {
-    title: "99.9% Accurate Invoice Capture",
-    description: "Multi-regional invoice processing managed by senior experts. We eliminate data entry errors and ensure 100% tax compliance across the UK and EU.",
-    icon: FileText
+    title: "Full Bookkeeping",
+    description: "Daily, weekly, or monthly bookkeeping managed by experts. We handle all data entry and financial administration with precision.",
+    icon: BookOpen
   },
   {
-    title: "Secure Multi-Currency Payments",
-    description: "Eliminate payment risk with strictly controlled, audit-ready payment runs executed within your existing banking and ERP environments.",
-    icon: CreditCard
+    title: "AP & AR Management",
+    description: "End-to-end management of accounts payable and receivable, ensuring cash flow remains healthy and vendors are paid on time.",
+    icon: Receipt
   },
   {
-    title: "Proactive Vendor Relations",
-    description: "Protect your supply chain. We handle all vendor inquiries, statement reconciliations, and disputes, keeping your reputation spotless.",
+    title: "VAT & Tax Reporting",
+    description: "Expert preparation and reporting of VAT in full compliance with UK regulations, mitigating risk and ensuring accuracy.",
+    icon: Calculator
+  },
+  {
+    title: "Payroll Processing",
+    description: "Scalable payroll support that grows with your business, handling complex calculations and UK compliance requirements.",
     icon: Users
   },
   {
-    title: "Rapid Exception Resolution",
-    description: "Stop payment delays before they happen. Our team proactively identifies and resolves discrepancies, maintaining 100% workflow continuity.",
-    icon: ShieldAlert
-  },
-  {
-    title: "Real-Time Financial Visibility",
-    description: "Gain total control over your cash flow with daily accrual reporting and granular spend analytics delivered directly to your leadership team.",
+    title: "Management Accounts",
+    description: "Detailed financial reporting and management accounts to give you real-time visibility into your business performance.",
     icon: BarChart3
   },
   {
-    title: "Continuous Process ROI",
-    description: "We don't just process; we optimize. Our team identifies efficiency gaps in your workflow to drive year-on-year operational cost savings.",
-    icon: Zap
+    title: "Year-End Support",
+    description: "Assistance with year-end accounts preparation, ensuring your records are audit-ready and compliant with UK standards.",
+    icon: ShieldCheck
   }
 ];
 
@@ -42,8 +42,8 @@ const Services = () => {
     <section id="services" className="py-24 bg-[#F8F9FA] scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">Outcome-Driven AP Management</h2>
-          <p className="text-gray-600 text-lg">We don't just provide labor; we provide results. Our managed services are designed to improve your bottom line and financial accuracy.</p>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">Comprehensive Accounting Support</h2>
+          <p className="text-gray-600 text-lg">From daily bookkeeping to complex financial reporting, our services are fully scalable to match your business needs.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

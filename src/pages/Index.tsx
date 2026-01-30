@@ -12,16 +12,17 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import SoftwareSupport from "@/components/SoftwareSupport";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      <main className="pt-0"> {/* Hero already handles padding, so pt-0 here is fine, but let's ensure Hero is the first element */}
+      <main className="pt-0">
         <Hero />
         
-        <LogoWall />
+        <SoftwareSupport />
         
         <Services />
         
