@@ -18,7 +18,6 @@ const Footer = () => {
             </p>
           </div>
           
-          {/* ... existing services and company links ... */}
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Services</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
@@ -34,7 +33,6 @@ const Footer = () => {
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Company</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
               <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/case-studies" className="hover:text-white transition-colors">Case Studies</Link></li>
               <li><Link to="/process" className="hover:text-white transition-colors">Our Process</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>

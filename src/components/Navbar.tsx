@@ -17,7 +17,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Use h-28 when not scrolled, and h-12 when scrolled for better usability
   const logoSizeClass = isScrolled ? "h-12" : "h-28";
 
   return (
@@ -41,7 +40,6 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <Link to="/about" className="text-sm font-semibold text-gray-300 hover:text-white transition-colors">About Us</Link>
-          <Link to="/case-studies" className="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Case Studies</Link>
           <Link to="/process" className="text-sm font-semibold text-gray-300 hover:text-white transition-colors">Our Process</Link>
           <Link to="/contact">
             <Button variant="default" className="bg-[#39B54A] hover:bg-[#2E933C] text-white px-6 font-bold uppercase text-xs tracking-wider shadow-lg shadow-[#39B54A]/20">
