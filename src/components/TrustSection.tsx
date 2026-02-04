@@ -5,18 +5,18 @@ import { ShieldCheck, Globe, Scale, Clock, Lock, ShieldAlert, CheckCircle, Lapto
 
 const trustFactors = [
   {
-    title: "UK & EU Standards",
-    description: "Highly qualified teams in Kosovo (CET) trained in UK accounting standards and practices.",
+    title: "International Standards",
+    description: "Highly qualified teams in Eastern Europe (CET) trained in global accounting standards and practices.",
     icon: Globe
   },
   {
     title: "Massive Cost Savings",
-    description: "Save 50% to 75% compared to UK in-house hiring. Predictable pricing starting at €10 per hour.",
+    description: "Save 50% to 75% compared to local in-house hiring. Predictable pricing starting at €10 per hour.",
     icon: Scale
   },
   {
     title: "Time Zone Alignment",
-    description: "Real-time collaboration and same-day task completion during standard UK business hours.",
+    description: "Real-time collaboration and same-day task completion tailored to your specific business hours.",
     icon: Clock
   },
   {
@@ -28,7 +28,7 @@ const trustFactors = [
 
 const securitySpecs = [
   { name: "Bank-Grade Security", description: "Twingate secure connections", icon: Lock },
-  { name: "GDPR Compliant", description: "Full UK/EU data protection", icon: ShieldAlert },
+  { name: "Global Compliance", description: "GDPR & International Data Protection", icon: ShieldAlert },
   { name: "Dedicated Hardware", description: "Managed professional laptops", icon: Laptop }
 ];
 
@@ -38,9 +38,9 @@ const TrustSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">
-            A Trusted UK–Eastern Europe Model
+            A Trusted International Delivery Model
           </h2>
-          <p className="text-gray-600">Our hybrid model blends UK regulatory standards with the efficiency of highly qualified Eastern European teams.</p>
+          <p className="text-gray-600">Our hybrid model blends international regulatory standards with the efficiency of highly qualified Eastern European teams.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
@@ -74,7 +74,7 @@ const TrustSection = () => {
         
         <div className="grid md:grid-cols-2 gap-8 items-center bg-[#0B1B35] rounded-3xl p-8 lg:p-16 text-white overflow-hidden relative">
           <div className="relative z-10">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Unbeatable ROI for UK Finance Teams.</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Unbeatable ROI for Global Finance Teams.</h2>
             <div className="flex flex-wrap gap-8">
               <div>
                 <div className="text-4xl lg:text-5xl font-extrabold text-[#39B54A] mb-2">€10/hr</div>
@@ -87,11 +87,11 @@ const TrustSection = () => {
             </div>
           </div>
           <div className="relative z-10 p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
-            <h4 className="font-bold text-[#39B54A] mb-2">Why Kosovo?</h4>
+            <h4 className="font-bold text-[#39B54A] mb-2">Why Our Hub?</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#39B54A]" /> Highly educated, English-speaking professionals</li>
-              <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#39B54A]" /> Strong experience in UK accounting</li>
-              <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#39B54A]" /> EU-aligned business practices</li>
+              <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#39B54A]" /> Highly educated, multilingual professionals</li>
+              <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#39B54A]" /> Extensive experience in international accounting</li>
+              <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#39B54A]" /> Modern business practices with cultural compatibility</li>
             </ul>
           </div>
         </div>

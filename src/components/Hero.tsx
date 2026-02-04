@@ -12,20 +12,20 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-xl">
             <h1 className="text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-8">
-              UK Accounting Standards. <span className="text-[#39B54A]">Eastern European Efficiency.</span>
+              International Standards. <span className="text-[#39B54A]">Global Efficiency.</span>
             </h1>
             <p className="text-lg text-gray-300 mb-10 leading-relaxed">
-              AP EVO combines UK accounting expertise with highly qualified teams in Kosovo. Reduce your operational costs by up to 75% while maintaining total accuracy and GDPR compliance.
+              AP EVO combines international financial expertise with highly qualified teams in Eastern Europe. Reduce your operational costs by up to 75% while maintaining total accuracy and global compliance.
             </p>
             
             <div className="space-y-4 mb-10">
               <div className="flex items-center gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
-                <span className="font-medium">Save 50% to 75% vs. UK In-house Hiring</span>
+                <span className="font-medium">Save 50% to 75% vs. Local In-house Hiring</span>
               </div>
               <div className="flex items-center gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
-                <span className="font-medium">Aligned with UK Working Hours & Time Zones</span>
+                <span className="font-medium">Aligned with Your Local Time Zones</span>
               </div>
               <div className="flex items-center gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
@@ -51,8 +51,8 @@ const Hero = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B35] via-transparent to-transparent opacity-60"></div>
               <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
-                <p className="text-sm font-semibold text-white mb-1">Trusted Nearshore Hub</p>
-                <p className="text-xs text-gray-300">Pristina, Kosovo • Aligned with UK Business Hours</p>
+                <p className="text-sm font-semibold text-white mb-1">Global Delivery Hub</p>
+                <p className="text-xs text-gray-300">Pristina • Aligned with International Business Hours</p>
               </div>
             </div>
           </div>

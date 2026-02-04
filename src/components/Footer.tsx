@@ -14,10 +14,11 @@ const Footer = () => {
               <img src="/logo.png" alt="AP EVO Logo" className="h-12 w-auto" />
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm">
-              Empowering finance leaders with expert-managed Accounts Payable solutions. Built for the EU and UK markets.
+              Empowering finance leaders with expert-managed Accounts Payable solutions for international markets.
             </p>
           </div>
           
+          {/* ... existing services and company links ... */}
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Services</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
@@ -52,7 +53,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#39B54A]" />
-                <span>Pristina, Kosovo</span>
+                <span>Global Hub: Pristina</span>
               </li>
             </ul>
           </div>
