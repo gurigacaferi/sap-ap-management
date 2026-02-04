@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, CheckCircle2, Loader2 } from "lucide-react";
 import { showSuccess, showError } from "@/utils/toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,10 +31,13 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // This is where the backend API call will go
-    // For now, we simulate a network request
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
+      });
+
+      if (error) throw error;
+
       showSuccess("Message sent! An expert will contact you shortly.");
       setFormData({
         firstName: "",
@@ -43,6 +47,7 @@ const Contact = () => {
         message: ""
       });
     } catch (error) {
+      console.error("Submission error:", error);
       showError("Failed to send message. Please try again later.");
     } finally {
       setIsSubmitting(false);
