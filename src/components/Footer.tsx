@@ -21,20 +21,21 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Services</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><Link to="/#services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Invoice Processing</Link></li>
-              <li><Link to="/#services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Payment Execution</Link></li>
-              <li><Link to="/#services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Vendor Management</Link></li>
-              <li><Link to="/#services" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Exception Handling</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Invoice Processing</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Approval Workflow</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Payment Execution</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Vendor Management</Link></li>
+              <li><Link to="/#services" className="hover:text-white transition-colors">Reconciliation</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Company</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><Link to="/about" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">About Us</Link></li>
-              <li><Link to="/#about" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Why AP EVO</Link></li>
-              <li><Link to="/process" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Our Process</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#39B54A] rounded">Privacy Policy</a></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/case-studies" className="hover:text-white transition-colors">Case Studies</Link></li>
+              <li><Link to="/process" className="hover:text-white transition-colors">Our Process</Link></li>
+              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
           
@@ -42,16 +43,16 @@ const Footer = () => {
             <h4 className="font-bold text-sm uppercase tracking-widest mb-8 text-gray-200">Contact</h4>
             <ul className="space-y-6 text-gray-400 text-sm">
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[#39B54A]" aria-hidden="true" />
+                <Mail className="w-5 h-5 text-[#39B54A]" />
                 <span>contact@apevo.com</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[#39B54A]" aria-hidden="true" />
+                <Phone className="w-5 h-5 text-[#39B54A]" />
                 <span>+383 (0) 44 000 000</span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#39B54A]" aria-hidden="true" />
-                <span>Pristina, Nearshore Hub</span>
+                <MapPin className="w-5 h-5 text-[#39B54A]" />
+                <span>Pristina, Kosovo</span>
               </li>
             </ul>
           </div>

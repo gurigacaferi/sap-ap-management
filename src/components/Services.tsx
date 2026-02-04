@@ -2,38 +2,33 @@
 
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { BookOpen, Receipt, Building2, Calculator, Users, BarChart3, ShieldCheck, TrendingDown } from "lucide-react";
+import { Receipt, CheckSquare, CreditCard, Building2, ArrowLeftRight } from "lucide-react";
 
 const services = [
   {
-    title: "Full Bookkeeping",
-    description: "Daily, weekly, or monthly bookkeeping managed by experts. We handle all data entry and financial administration with precision.",
-    icon: BookOpen
-  },
-  {
-    title: "AP & AR Management",
-    description: "End-to-end management of accounts payable and receivable, ensuring cash flow remains healthy and vendors are paid on time.",
+    title: "Invoice Processing",
+    description: "Receiving, scanning, and validating invoices against purchase orders and receiving reports to ensure accuracy.",
     icon: Receipt
   },
   {
-    title: "VAT & Tax Reporting",
-    description: "Expert preparation and reporting of VAT in full compliance with UK regulations, mitigating risk and ensuring accuracy.",
-    icon: Calculator
+    title: "Approval Workflow",
+    description: "Routing invoices for internal approval to ensure proper authorization and control.",
+    icon: CheckSquare
   },
   {
-    title: "Payroll Processing",
-    description: "Scalable payroll support that grows with your business, handling complex calculations and UK compliance requirements.",
-    icon: Users
+    title: "Payment Execution",
+    description: "Scheduling and preparing invoices for payment, ensuring your vendors are paid correctly and on time.",
+    icon: CreditCard
   },
   {
-    title: "Management Accounts",
-    description: "Detailed financial reporting and management accounts to give you real-time visibility into your business performance.",
-    icon: BarChart3
+    title: "Vendor Management",
+    description: "Maintaining vendor data, resolving payment discrepancies, and handling all supplier inquiries.",
+    icon: Building2
   },
   {
-    title: "Year-End Support",
-    description: "Assistance with year-end accounts preparation, ensuring your records are audit-ready and compliant with UK standards.",
-    icon: ShieldCheck
+    title: "Reconciliation",
+    description: "Reconciling supplier statements with internal records to ensure absolute financial accuracy.",
+    icon: ArrowLeftRight
   }
 ];
 
@@ -42,8 +37,8 @@ const Services = () => {
     <section id="services" className="py-24 bg-[#F8F9FA] scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">Comprehensive Accounting Support</h2>
-          <p className="text-gray-600 text-lg">From daily bookkeeping to complex financial reporting, our services are fully scalable to match your business needs.</p>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0B1B35] mb-6">Our Accounts Payable Services</h2>
+          <p className="text-gray-600 text-lg">We provide a specialized suite of AP solutions designed to streamline your finance operations.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

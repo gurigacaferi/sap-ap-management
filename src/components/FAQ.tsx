@@ -10,24 +10,24 @@ import {
 
 const faqs = [
   {
-    question: "How do you ensure data security for UK businesses?",
-    answer: "We operate under strict GDPR-compliant processes. This includes bank-grade secure connections via Twingate, dedicated company hardware for all staff (no personal devices), and mandatory Non-Disclosure Agreements (NDAs) for every team member."
+    question: "How do you ensure data security for our invoice data?",
+    answer: "We operate under strict GDPR-compliant processes. This includes bank-grade secure connections via Twingate, dedicated company hardware for all staff (no personal devices), and mandatory Non-Disclosure Agreements (NDAs) for every team member handling your financial documents."
   },
   {
-    question: "Can you work with our existing accounting software?",
-    answer: "Absolutely. Our team has strong experience with leading platforms like QuickBooks Online, SAP, Sage (50, 100, and Cloud), and FreeAgent. We adapt to your current workflow with zero disruption."
+    question: "Can you manage approvals within our current system?",
+    answer: "Absolutely. Our team is experienced in routing invoices through internal approval workflows within platforms like SAP, QuickBooks, and Xero. We ensure proper authorization is captured before any payment is scheduled."
   },
   {
-    question: "How does the time zone coverage work?",
-    answer: "We offer flexible working hours aligned with UK business time zones. This ensures real-time collaboration, same-day task completion, and availability during your standard working hours."
+    question: "How do you handle vendor inquiries?",
+    answer: "Your dedicated AP EVO team acts as your internal AP desk. We maintain vendor data, resolve discrepancies between invoices and POs, and handle all inquiries professionally during UK business hours."
   },
   {
-    question: "What kind of cost savings can we expect?",
-    answer: "By outsourcing to our Kosovo hub, UK companies typically save between 50% and 75% compared to hiring in-house. Our average pricing is approximately €10 per hour, with no recruitment or training overhead."
+    question: "What does your reconciliation process involve?",
+    answer: "We perform regular reconciliations of supplier statements against your internal records. This ensures all liabilities are accurately recorded and any missing invoices are identified and processed immediately."
   },
   {
-    question: "Are your staff familiar with UK accounting standards?",
-    answer: "Yes. Our hybrid model is led by professionals with direct UK experience. Our staff are highly educated accounting professionals trained specifically in UK and EU regulatory standards."
+    question: "What cost savings can we expect on our AP function?",
+    answer: "By utilizing our Kosovo hub for your AP processing, you can typically save between 50% and 75% compared to UK in-house hiring, with average pricing at €10 per hour and zero recruitment overhead."
   }
 ];
 
@@ -37,7 +37,7 @@ const FAQ = () => {
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-blue-950 mb-4">Frequently Asked Questions</h2>
-          <p className="text-gray-600">Everything you need to know about our nearshore accounting model.</p>
+          <p className="text-gray-600">Common questions about our specialized Accounts Payable management.</p>
         </div>
         
         <Accordion type="single" collapsible className="w-full">
