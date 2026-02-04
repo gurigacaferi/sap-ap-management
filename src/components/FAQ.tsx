@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "How do you handle vendor inquiries?",
-    answer: "Your dedicated AP EVO team acts as your internal AP desk. We maintain vendor data, resolve discrepancies between invoices and POs, and handle all inquiries professionally during UK business hours."
+    answer: "Your dedicated AP EVO team acts as your internal AP desk. We maintain vendor data, resolve discrepancies between invoices and POs, and handle all inquiries professionally, typically aligned with your local business hours for seamless communication."
   },
   {
     question: "What does your reconciliation process involve?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "What cost savings can we expect on our AP function?",
-    answer: "By utilizing our Kosovo hub for your AP processing, you can typically save between 50% and 75% compared to UK in-house hiring, with average pricing at €10 per hour and zero recruitment overhead."
+    answer: "By utilizing our specialized hub for your AP processing, you can typically save between 50% and 75% compared to local in-house hiring in Western markets, with predictable pricing and zero recruitment overhead."
   }
 ];
 
