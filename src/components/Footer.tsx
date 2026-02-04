@@ -43,15 +43,18 @@ const Footer = () => {
             <ul className="space-y-6 text-gray-400 text-sm">
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#39B54A]" />
-                <span>contact@apevo.com</span>
+                <span>info@ap-evo.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#39B54A]" />
-                <span>+383 (0) 44 000 000</span>
+                <div className="flex flex-col">
+                  <span>KS: +383 49 851 888</span>
+                  <span className="text-[10px] opacity-50 text-gray-500">UK: +44 000 000 000</span>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#39B54A]" />
-                <span>Global Hub: Pristina</span>
+                <span>Veternik, Prishtine</span>
               </li>
             </ul>
           </div>

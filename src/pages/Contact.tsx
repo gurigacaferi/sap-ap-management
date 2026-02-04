@@ -35,7 +35,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-950 mb-1">Email Us</h3>
-                    <p className="text-gray-600">contact@apevo.com</p>
+                    <p className="text-gray-600">info@ap-evo.com</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -44,7 +44,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-950 mb-1">Call Us</h3>
-                    <p className="text-gray-600">+383 (0) 44 000 000</p>
+                    <div className="text-gray-600 space-y-1">
+                      <p>Kosovo: +383 49 851 888</p>
+                      <p>UK: +44 (0) 000 000 000</p>
+                    </div>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -53,7 +56,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-blue-950 mb-1">Our Hub</h3>
-                    <p className="text-gray-600">Pristina, Nearshore Hub</p>
+                    <p className="text-gray-600">Veternik, Prishtine</p>
                   </div>
                 </div>
               </div>

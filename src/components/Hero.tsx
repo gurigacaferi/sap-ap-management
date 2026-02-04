@@ -52,7 +52,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B35] via-transparent to-transparent opacity-60"></div>
               <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
                 <p className="text-sm font-semibold text-white mb-1">Global Delivery Hub</p>
-                <p className="text-xs text-gray-300">Pristina • Aligned with International Business Hours</p>
+                <p className="text-xs text-gray-300">Veternik, Prishtine • Aligned with Global Business Hours</p>
               </div>
             </div>
           </div>
