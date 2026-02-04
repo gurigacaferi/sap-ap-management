@@ -32,14 +32,17 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await supabase.functions.invoke('send-contact-email', {
-        body: formData,
-      });
+      // Using the full hardcoded URL path as per Supabase Edge Function guidelines
+      const { data, error } = await supabase.functions.invoke(
+        'https://lffastfufqwvspmtpbvi.supabase.co/functions/v1/send-contact-email',
+        {
+          body: formData,
+        }
+      );
 
-      if (response.error) {
-        // Log the specific error from the Edge Function
-        console.error("Edge Function Error:", response.error);
-        throw new Error(response.error.message || "Email delivery failed");
+      if (error) {
+        console.error("Edge Function Invocation Error:", error);
+        throw new Error(error.message || "Failed to trigger email service.");
       }
 
       showSuccess("Message sent! An expert will contact you shortly.");
@@ -51,8 +54,8 @@ const Contact = () => {
         message: ""
       });
     } catch (error: any) {
-      console.error("Submission error details:", error);
-      showError(error.message || "Failed to send message. Please try again later.");
+      console.error("Submission details:", error);
+      showError(error.message || "An error occurred. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
