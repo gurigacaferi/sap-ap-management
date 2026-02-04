@@ -32,15 +32,14 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Using the function name allows the Supabase client to handle URL construction
-      // and required headers (like apikey) correctly.
       const { data, error } = await supabase.functions.invoke('send-contact-email', {
         body: formData,
       });
 
       if (error) {
-        console.error("Edge Function Invocation Error:", error);
-        throw new Error(error.message || "Failed to trigger email service.");
+        // Handle specific error object from Supabase invoke
+        const errorMsg = error.context?.message || error.message || "Failed to send message";
+        throw new Error(errorMsg);
       }
 
       showSuccess("Message sent! An expert will contact you shortly.");
@@ -52,8 +51,8 @@ const Contact = () => {
         message: ""
       });
     } catch (error: any) {
-      console.error("Submission details:", error);
-      showError(error.message || "An error occurred. Please try again.");
+      console.error("Submission Error:", error);
+      showError(error.message || "An unexpected error occurred.");
     } finally {
       setIsSubmitting(false);
     }
