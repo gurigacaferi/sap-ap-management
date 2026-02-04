@@ -3,11 +3,13 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts"
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
 }
 
 const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
 
 serve(async (req) => {
+  // Handle CORS preflight requests
   if (req.method === 'OPTIONS') {
     return new Response(null, { headers: corsHeaders })
   }
@@ -18,9 +20,13 @@ serve(async (req) => {
     console.log("[send-contact-email] Processing submission:", { firstName, lastName, email, company });
 
     if (!RESEND_API_KEY) {
+      console.error("[send-contact-email] RESEND_API_KEY is missing");
       return new Response(
-        JSON.stringify({ error: "RESEND_API_KEY is missing in Supabase secrets." }),
-        { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 500 }
+        JSON.stringify({ error: "Email service configuration missing." }),
+        { 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }, 
+          status: 500 
+        }
       )
     }
 
@@ -32,7 +38,7 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         from: 'AP EVO <onboarding@resend.dev>',
-        to: ['info@ap-evo.com'], // Ensure this email matches your Resend account email if using the free tier
+        to: ['info@ap-evo.com'], 
         subject: `New Inquiry: ${firstName} ${lastName} from ${company}`,
         html: `
           <div style="font-family: sans-serif; padding: 20px;">
@@ -49,22 +55,31 @@ serve(async (req) => {
     const data = await res.json()
 
     if (!res.ok) {
-      console.error("[send-contact-email] Resend Error:", data);
+      console.error("[send-contact-email] Resend API Error:", data);
       return new Response(
-        JSON.stringify({ error: data.message || "Failed to send email" }),
-        { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: res.status }
+        JSON.stringify({ error: data.message || "Failed to send email via provider" }),
+        { 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }, 
+          status: res.status 
+        }
       )
     }
 
     return new Response(
       JSON.stringify({ success: true }),
-      { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 200 }
+      { 
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }, 
+        status: 200 
+      }
     )
   } catch (error) {
     console.error("[send-contact-email] Fatal Error:", error);
     return new Response(
       JSON.stringify({ error: error.message }),
-      { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 500 }
+      { 
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }, 
+        status: 500 
+      }
     )
   }
 })

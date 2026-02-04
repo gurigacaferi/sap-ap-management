@@ -32,13 +32,11 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Using the full hardcoded URL path as per Supabase Edge Function guidelines
-      const { data, error } = await supabase.functions.invoke(
-        'https://lffastfufqwvspmtpbvi.supabase.co/functions/v1/send-contact-email',
-        {
-          body: formData,
-        }
-      );
+      // Using the function name allows the Supabase client to handle URL construction
+      // and required headers (like apikey) correctly.
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
+      });
 
       if (error) {
         console.error("Edge Function Invocation Error:", error);
