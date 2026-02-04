@@ -32,11 +32,15 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
+      const response = await supabase.functions.invoke('send-contact-email', {
         body: formData,
       });
 
-      if (error) throw error;
+      if (response.error) {
+        // Log the specific error from the Edge Function
+        console.error("Edge Function Error:", response.error);
+        throw new Error(response.error.message || "Email delivery failed");
+      }
 
       showSuccess("Message sent! An expert will contact you shortly.");
       setFormData({
@@ -46,9 +50,9 @@ const Contact = () => {
         company: "",
         message: ""
       });
-    } catch (error) {
-      console.error("Submission error:", error);
-      showError("Failed to send message. Please try again later.");
+    } catch (error: any) {
+      console.error("Submission error details:", error);
+      showError(error.message || "Failed to send message. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
