@@ -14,8 +14,8 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ 
-        duration: 0.4, 
-        ease: [0.22, 1, 0.36, 1] // A smoother custom cubic-bezier
+        duration: 0.2, // Much faster
+        ease: "linear"
       }}
     >
       {children}
