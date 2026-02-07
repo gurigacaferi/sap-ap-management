@@ -5,27 +5,27 @@ import React from 'react';
 const software = [
   { 
     name: "QuickBooks Online", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/d/de/Quickbooks_logo.svg" 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Quickbooks_logo.svg/512px-Quickbooks_logo.svg.png" 
   },
   { 
     name: "Xero", 
-    logo: "https://upload.wikimedia.org/wikipedia/en/9/9f/Xero_software_logo.svg" 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Xero_software_logo.svg/512px-Xero_software_logo.svg.png" 
   },
   { 
     name: "SAP", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg" 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/512px-SAP_2011_logo.svg.png" 
   },
   { 
     name: "Sage", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/41/Sage_Group_logo.svg" 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sage_Group_logo.svg/512px-Sage_Group_logo.svg.png" 
   },
   { 
     name: "FreeAgent", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/FreeAgent_logo.svg" 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/FreeAgent_logo.svg/512px-FreeAgent_logo.svg.png" 
   },
   { 
     name: "Microsoft Dynamics", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Microsoft_Dynamics_logo.svg" 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Microsoft_Dynamics_365_logo.svg/512px-Microsoft_Dynamics_365_logo.svg.png" 
   }
 ];
 
@@ -43,8 +43,9 @@ const SoftwareSupport = () => {
               <img 
                 src={s.logo} 
                 alt={s.name} 
-                className="h-10 md:h-12 w-auto object-contain max-w-[140px]" 
+                className="h-8 md:h-10 w-auto object-contain max-w-[140px]" 
                 title={s.name}
+                loading="lazy"
               />
             </div>
           ))}
