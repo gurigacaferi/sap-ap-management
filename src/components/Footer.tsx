@@ -34,7 +34,7 @@ const Footer = () => {
             <ul className="space-y-4 text-gray-400 text-sm">
               <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/process" className="hover:text-white transition-colors">Our Process</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
           
@@ -75,8 +75,8 @@ const Footer = () => {
             © {new Date().getFullYear()} AP EVO Managed Services. All rights reserved.
           </div>
           <div className="flex gap-8 text-xs text-gray-500">
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
             <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
           </div>
         </div>
