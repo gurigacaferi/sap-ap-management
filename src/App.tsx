@@ -2,8 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import Process from "./pages/Process";
@@ -11,26 +10,8 @@ import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
-import PageTransition from "./components/PageTransition";
 
 const queryClient = new QueryClient();
-
-const AnimatedRoutes = () => {
-  const location = useLocation();
-  
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageTransition><Index /></PageTransition>} />
-        <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
-        <Route path="/process" element={<PageTransition><Process /></PageTransition>} />
-        <Route path="/about" element={<PageTransition><About /></PageTransition>} />
-        <Route path="/privacy-policy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
-        <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
-      </Routes>
-    </AnimatePresence>
-  );
-};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -39,7 +20,14 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <AnimatedRoutes />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/process" element={<Process />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
