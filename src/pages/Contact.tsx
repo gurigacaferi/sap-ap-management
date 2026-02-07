@@ -1,61 +1,19 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, CheckCircle2, Loader2 } from "lucide-react";
-import { showSuccess, showError } from "@/utils/toast";
-import { supabase } from "@/integrations/supabase/client";
+import { Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import { showSuccess } from "@/utils/toast";
 
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    company: "",
-    message: ""
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { id, value } = e.target;
-    const key = id.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
-    setFormData(prev => ({ ...prev, [key]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData,
-      });
-
-      if (error) {
-        // Handle specific error object from Supabase invoke
-        const errorMsg = error.context?.message || error.message || "Failed to send message";
-        throw new Error(errorMsg);
-      }
-
-      showSuccess("Message sent! An expert will contact you shortly.");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        company: "",
-        message: ""
-      });
-    } catch (error: any) {
-      console.error("Submission Error:", error);
-      showError(error.message || "An unexpected error occurred.");
-    } finally {
-      setIsSubmitting(false);
-    }
+    showSuccess("Message sent! An expert will contact you shortly.");
   };
 
   return (
@@ -128,67 +86,27 @@ const Contact = () => {
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="first-name">First Name</Label>
-                    <Input 
-                      id="first-name" 
-                      placeholder="John" 
-                      required 
-                      value={formData.firstName}
-                      onChange={handleChange}
-                    />
+                    <Input id="first-name" placeholder="John" required />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="last-name">Last Name</Label>
-                    <Input 
-                      id="last-name" 
-                      placeholder="Doe" 
-                      required 
-                      value={formData.lastName}
-                      onChange={handleChange}
-                    />
+                    <Input id="last-name" placeholder="Doe" required />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Work Email</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="john@company.com" 
-                    required 
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
+                  <Input id="email" type="email" placeholder="john@company.com" required />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="company">Company</Label>
-                  <Input 
-                    id="company" 
-                    placeholder="Enter company name" 
-                    required 
-                    value={formData.company}
-                    onChange={handleChange}
-                  />
+                  <Input id="company" placeholder="Enter company name" required />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">How can we help?</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell us about your AP challenges..." 
-                    className="min-h-[120px]" 
-                    value={formData.message}
-                    onChange={handleChange}
-                  />
+                  <Textarea id="message" placeholder="Tell us about your AP challenges..." className="min-h-[120px]" />
                 </div>
-                <Button 
-                  type="submit" 
-                  disabled={isSubmitting}
-                  className="w-full bg-blue-900 hover:bg-blue-800 text-white h-14 text-lg"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Sending...
-                    </>
-                  ) : "Send Message"}
+                <Button type="submit" className="w-full bg-blue-900 hover:bg-blue-800 text-white h-14 text-lg">
+                  Send Message
                 </Button>
                 <p className="text-center text-xs text-gray-500 mt-4">
                   By submitting this form, you agree to our privacy policy.
