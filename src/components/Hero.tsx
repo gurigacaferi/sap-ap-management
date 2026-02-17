@@ -12,16 +12,16 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-xl">
             <h1 className="text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-8">
-              International Standards. <span className="text-[#39B54A]">Global Efficiency.</span>
+              Save Up to <span className="text-[#39B54A]">75%</span> on Your Finance Operations.
             </h1>
             <p className="text-lg text-gray-300 mb-10 leading-relaxed">
-              AP EVO combines international financial expertise with highly qualified teams in Eastern Europe. Reduce your operational costs by up to 75% while maintaining total accuracy and global compliance.
+              AP EVO combines international financial expertise with highly qualified teams in Eastern Europe. Reduce your operational costs significantly while maintaining total accuracy and global compliance.
             </p>
             
             <div className="space-y-4 mb-10">
               <div className="flex items-center gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
-                <span className="font-medium">Save 50% to 75% vs. Local In-house Hiring</span>
+                <span className="font-medium">Up to 75% More Cost-Effective than Local In-house Hiring</span>
               </div>
               <div className="flex items-center gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
@@ -36,7 +36,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
                 <Button size="lg" className="bg-[#39B54A] hover:bg-[#2E933C] text-white px-8 h-14 text-sm font-bold uppercase tracking-wider w-full sm:w-auto">
-                  Get a Quote — from €10/hr
+                  Contact Us to Get a Rate
                 </Button>
               </Link>
             </div>

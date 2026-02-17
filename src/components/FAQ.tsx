@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "What cost savings can we expect on our AP function?",
-    answer: "By utilizing our specialized hub for your AP processing, you can typically save between 50% and 75% compared to local in-house hiring in Western markets, with predictable pricing and zero recruitment overhead."
+    answer: "By utilizing our specialized hub for your AP processing, you can typically save between 50% and 75% compared to local in-house hiring in Western markets. Contact us for a customized rate based on your specific volume and requirements."
   }
 ];
 

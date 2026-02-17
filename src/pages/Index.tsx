@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import LogoWall from "@/components/LogoWall";
 import Services from "@/components/Services";
 import TrustSection from "@/components/TrustSection";
-import Testimonials from "@/components/Testimonials";
 import ProcessSection from "@/components/ProcessSection";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -27,8 +26,6 @@ const Index = () => {
         <Services />
         
         <TrustSection />
-        
-        <Testimonials />
         
         <ProcessSection />
         

@@ -15,12 +15,11 @@ const CTASection = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link to="/contact">
             <Button size="lg" className="bg-[#39B54A] hover:bg-[#2E933C] text-white px-10 h-16 text-sm font-bold uppercase tracking-wider shadow-xl w-full sm:w-auto">
-              Get a Quote in 24 Hours
+              Get a Custom Quote
             </Button>
           </Link>
         </div>
       </div>
-      {/* Decorative background elements can be added here if needed */}
     </section>
   );
 };
