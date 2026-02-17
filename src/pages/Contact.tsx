@@ -37,17 +37,6 @@ const Contact = () => {
                 <h3 className="font-bold text-blue-950 text-xl mb-2">WhatsApp Us</h3>
                 <div className="space-y-3">
                   <div className="flex flex-col">
-                    <span className="text-xs font-bold uppercase text-gray-400 mb-1">Kosovo Office</span>
-                    <a 
-                      href="https://wa.me/38349851888" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-[#39B54A] transition-colors font-medium"
-                    >
-                      +383 49 851 888
-                    </a>
-                  </div>
-                  <div className="flex flex-col">
                     <span className="text-xs font-bold uppercase text-gray-400 mb-1">UK Office</span>
                     <a 
                       href="https://wa.me/447892893559" 
@@ -56,6 +45,17 @@ const Contact = () => {
                       className="text-gray-600 hover:text-[#39B54A] transition-colors font-medium"
                     >
                       +44 (0) 7892 893559
+                    </a>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-xs font-bold uppercase text-gray-400 mb-1">Kosovo Office</span>
+                    <a 
+                      href="https://wa.me/38349851888" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-[#39B54A] transition-colors font-medium"
+                    >
+                      +383 49 851 888
                     </a>
                   </div>
                 </div>

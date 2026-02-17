@@ -49,15 +49,15 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-[#39B54A] mt-1" />
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-col">
-                    <span className="text-[10px] font-bold uppercase text-gray-500">Kosovo Office</span>
-                    <a href="https://wa.me/38349851888" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                      +383 49 851 888
-                    </a>
-                  </div>
-                  <div className="flex flex-col">
                     <span className="text-[10px] font-bold uppercase text-gray-500">UK Office</span>
                     <a href="https://wa.me/447892893559" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                       +44 (0) 7892 893559
+                    </a>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold uppercase text-gray-500">Kosovo Office</span>
+                    <a href="https://wa.me/38349851888" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                      +383 49 851 888
                     </a>
                   </div>
                 </div>
