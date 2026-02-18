@@ -3,12 +3,13 @@
 import React from 'react';
 
 const software = [
+  { name: "SAP", logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg" },
+  { name: "Oracle", logo: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" },
+  { name: "Microsoft Dynamics", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Microsoft_Dynamics_logo.svg" },
   { name: "QuickBooks Online", logo: "https://upload.wikimedia.org/wikipedia/commons/d/de/Quickbooks_logo.svg" },
   { name: "Xero", logo: "https://upload.wikimedia.org/wikipedia/en/9/9f/Xero_software_logo.svg" },
-  { name: "SAP", logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg" },
   { name: "Sage", logo: "https://upload.wikimedia.org/wikipedia/commons/4/41/Sage_Group_logo.svg" },
-  { name: "FreeAgent", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/FreeAgent_logo.svg" },
-  { name: "Microsoft Dynamics", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Microsoft_Dynamics_logo.svg" }
+  { name: "FreeAgent", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/FreeAgent_logo.svg" }
 ];
 
 const SoftwareSupport = () => {
