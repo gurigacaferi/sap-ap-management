@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-xl">
             <h1 className="text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-8">
-              Save Up to <span className="text-[#39B54A]">75%</span> on Your Finance Operations.
+              Save Up to <span className="text-[#39B54A]">60%</span> on Your Finance Operations.
             </h1>
             <p className="text-lg text-gray-300 mb-10 leading-relaxed">
               AP EVO combines international financial expertise with highly qualified teams in Eastern Europe. Reduce your operational costs significantly while maintaining total accuracy and global compliance.
@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="space-y-4 mb-10">
               <div className="flex items-center gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />
-                <span className="font-medium">Up to 75% More Cost-Effective than Local In-house Hiring</span>
+                <span className="font-medium">Up to 60% More Cost-Effective than Local In-house Hiring</span>
               </div>
               <div className="flex items-center gap-3 text-gray-200">
                 <CheckCircle2 className="w-5 h-5 text-[#39B54A]" />

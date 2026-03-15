@@ -11,7 +11,7 @@ const trustFactors = [
   },
   {
     title: "Massive Cost Savings",
-    description: "Save 50% to 75% compared to local in-house hiring in the UK or EU. Optimized delivery model.",
+    description: "Save 50% to 60% compared to local in-house hiring in the UK or EU. Optimized delivery model.",
     icon: Scale
   },
   {
@@ -77,7 +77,7 @@ const TrustSection = () => {
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">Unbeatable ROI for Global Finance Teams.</h2>
             <div className="flex flex-wrap gap-8">
               <div>
-                <div className="text-4xl lg:text-5xl font-extrabold text-[#39B54A] mb-2">Up to 75%</div>
+                <div className="text-4xl lg:text-5xl font-extrabold text-[#39B54A] mb-2">Up to 60%</div>
                 <div className="text-gray-400 font-medium uppercase text-xs tracking-widest">Cost Reduction</div>
               </div>
               <div>
